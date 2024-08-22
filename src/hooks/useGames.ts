@@ -22,7 +22,7 @@ interface FetchGamesResponse {
 }
 
 const useGames = () => {
-    const controller = new AbortController
+    const controller = new AbortController();
 
     const [games, setGames] = useState<Game[]>([]);
     const [error, setError] = useState("");
