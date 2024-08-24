@@ -23,7 +23,7 @@ const PlatformIconList = ({ platforms }: Props) => {
     // name: PlatStation
     // slug: platstation
     pc: FaWindows,
-    platstation: FaPlaystation,
+    playstation: FaPlaystation,
     xbox: FaXbox,
     nintendo: SiNintendo,
     mac: FaApple,
