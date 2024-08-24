@@ -16,13 +16,6 @@ const GenreListSkeleton = () => {
         <SkeletonText />
       </ListItem>
     </List>
-
-    // <Card>
-    //   <Skeleton height="30px" />
-    //   <CardBody>
-    //     <SkeletonText />
-    //   </CardBody>
-    // </Card>
   );
 };
 
