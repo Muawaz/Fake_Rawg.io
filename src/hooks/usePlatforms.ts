@@ -10,7 +10,12 @@ export interface Platform {
     slug: string
 }
 
-const usePlatform = () => useQuery({
+interface PlatformResponse {
+    count: number;
+    results: Platform[];
+}
+
+const usePlatform = () => useQuery<PlatformResponse>({
     queryKey: ['platforms'],
     queryFn: apiClient.getAll,
     staleTime: 24 * 60 * 60 * 1000, //24h
