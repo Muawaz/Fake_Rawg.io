@@ -15,11 +15,11 @@ interface PlatformResponse {
     results: Platform[];
 }
 
-const usePlatform = () => useQuery<PlatformResponse>({
+const usePlatforms = () => useQuery<PlatformResponse>({
     queryKey: ['platforms'],
     queryFn: apiClient.getAll,
     staleTime: 24 * 60 * 60 * 1000, //24h
-    initialData: {count: platforms.length, results: platforms}
+    initialData: platforms
 })
 
-export default usePlatform
+export default usePlatforms
