@@ -7,7 +7,6 @@ import SortSelector from "../components/SortSelector";
 import useGameQueryStore from "../store";
 
 const HomePage = () => {
-  throw new Error("failed error");
   const { gameQuery, setGenreId, setPlatformId, setSortOrder } =
     useGameQueryStore();
 
