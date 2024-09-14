@@ -1,13 +1,14 @@
-import { Box, Flex, Grid, GridItem, Show } from '@chakra-ui/react';
-import GameGrid from '../components/GameGrid';
-import GameHeading from '../components/GameHeading';
-import GenreList from '../components/GenreList';
-import PlatformSelector from '../components/PlatformSelector';
-import SortSelector from '../components/SortSelector';
-import useGameQueryStore from '../store';
+import { Box, Flex, Grid, GridItem, Show } from "@chakra-ui/react";
+import GameGrid from "../components/GameGrid";
+import GameHeading from "../components/GameHeading";
+import GenreList from "../components/GenreList";
+import PlatformSelector from "../components/PlatformSelector";
+import SortSelector from "../components/SortSelector";
+import useGameQueryStore from "../store";
 
 const HomePage = () => {
-    const { gameQuery, setGenreId, setPlatformId, setSortOrder } =
+  throw new Error("failed error");
+  const { gameQuery, setGenreId, setPlatformId, setSortOrder } =
     useGameQueryStore();
 
   return (
@@ -41,6 +42,6 @@ const HomePage = () => {
       </GridItem>
     </Grid>
   );
-}
+};
 
-export default HomePage
+export default HomePage;

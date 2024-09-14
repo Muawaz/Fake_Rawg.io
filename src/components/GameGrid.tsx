@@ -8,7 +8,6 @@ import GameCardContainer from "./GameCardContainer";
 import GameCardSkeleton from "./GameCardSkeleton";
 
 const GameGrid = () => {
-  
   const {
     data: games,
     error,
